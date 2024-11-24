@@ -1,6 +1,6 @@
 {
   "name": "mui-useful-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "exports": {
     ".": {
@@ -10,9 +10,7 @@
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
@@ -20,7 +18,7 @@
     "dev": "rslib build --watch",
     "format": "biome format --write",
     "storybook": "storybook dev --no-open --port 9000",
-    "prepack": "nr check && nr test && nr build",
+    "prepublishOnly": "nr check && nr test && nr build",
     "release": "changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
     "update": "nlx taze -wlI"
@@ -60,6 +58,5 @@
     "@mui/material": ">=6.1.8",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
-  },
-  "private": true
+  }
 }
