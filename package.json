@@ -1,0 +1,58 @@
+{
+  "name": "mui-useful-components",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rslib build",
+    "build:storybook": "storybook build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
+    "storybook": "storybook dev --no-open --port 9000",
+    "test": "vitest run",
+    "update": "nlx taze -wlI"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@emotion/react": "11.13.5",
+    "@emotion/styled": "11.13.5",
+    "@mui/material": "6.1.8",
+    "@rsbuild/core": "1.1.4",
+    "@rsbuild/plugin-react": "1.0.7",
+    "@rslib/core": "0.1.0",
+    "@storybook/addon-essentials": "8.4.5",
+    "@storybook/addon-interactions": "8.4.5",
+    "@storybook/addon-links": "8.4.5",
+    "@storybook/addon-onboarding": "8.4.5",
+    "@storybook/blocks": "8.4.5",
+    "@storybook/react": "8.4.5",
+    "@storybook/test": "8.4.5",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.0.1",
+    "@types/react": "18.3.12",
+    "jsdom": "25.0.1",
+    "react": "18.3.1",
+    "storybook": "8.4.5",
+    "storybook-addon-rslib": "0.1.5",
+    "storybook-react-rsbuild": "0.1.5",
+    "typescript": "5.7.2",
+    "vitest": "2.1.5"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "@emotion/react": ">=11.13.5",
+    "@emotion/styled": ">=11.13.5",
+    "@mui/material": ">=6.1.8"
+  },
+  "private": true
+}
