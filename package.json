@@ -10,7 +10,9 @@
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
@@ -18,10 +20,13 @@
     "dev": "rslib build --watch",
     "format": "biome format --write",
     "storybook": "storybook dev --no-open --port 9000",
+    "prepack": "nr check && nr test && nr build",
+    "release": "changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
     "update": "nlx taze -wlI"
   },
   "devDependencies": {
+    "@antfu/ni": "0.23.1",
     "@biomejs/biome": "1.9.4",
     "@emotion/react": "11.13.5",
     "@emotion/styled": "11.13.5",
@@ -39,6 +44,8 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.0.1",
     "@types/react": "18.3.12",
+    "@vitest/coverage-v8": "2.1.5",
+    "changelogen": "0.5.7",
     "jsdom": "25.0.1",
     "react": "18.3.1",
     "storybook": "8.4.5",
@@ -48,11 +55,11 @@
     "vitest": "2.1.5"
   },
   "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
     "@emotion/react": ">=11.13.5",
     "@emotion/styled": ">=11.13.5",
-    "@mui/material": ">=6.1.8"
+    "@mui/material": ">=6.1.8",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "private": true
 }
