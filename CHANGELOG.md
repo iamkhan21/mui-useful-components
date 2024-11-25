@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.0.2...v1.1.0)
+
+### 🚀 Enhancements
+
+- Set onlyDigits as false by default, add keywords and README.md, tests ([2d806ec](https://github.com/iamkhan21/mui-useful-components/commit/2d806ec))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.0.3
 
 [compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.0.2...v1.0.3)
