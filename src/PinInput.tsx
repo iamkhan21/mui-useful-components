@@ -29,7 +29,7 @@ const Root: React.FC<
     onValueComplete: (pin: string) => void;
     onlyDigits?: boolean;
   }>
-> = ({ children, onlyDigits = true, onValueComplete }) => {
+> = ({ children, onlyDigits = false, onValueComplete }) => {
   const inputId = React.useRef(self.crypto.randomUUID().slice(-10));
 
   const inputRefs = React.useRef<HTMLInputElement[]>([]);

@@ -1,6 +1,7 @@
 {
   "name": "mui-useful-components",
-  "version": "1.0.2",
+  "description": "A library of React components built on Material-UI for enhanced UI/UX",
+  "version": "1.0.3",
   "type": "module",
   "exports": {
     ".": {
@@ -10,9 +11,7 @@
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
@@ -31,7 +30,7 @@
     "@emotion/react": "11.13.5",
     "@emotion/styled": "11.13.5",
     "@mui/material": "6.1.8",
-    "@rsbuild/core": "1.1.4",
+    "@rsbuild/core": "1.1.5",
     "@rsbuild/plugin-react": "1.0.7",
     "@rslib/core": "0.1.0",
     "@storybook/addon-essentials": "8.4.5",
@@ -43,6 +42,7 @@
     "@storybook/test": "8.4.5",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.0.1",
+    "@testing-library/user-event": "14.5.2",
     "@types/react": "18.3.12",
     "@vitest/coverage-v8": "2.1.5",
     "changelogen": "0.5.7",
@@ -60,5 +60,23 @@
     "@mui/material": ">=6.1.8",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
-  }
+  },
+  "keywords": [
+    "mui",
+    "material-ui",
+    "react",
+    "components",
+    "ui",
+    "library",
+    "pin-input",
+    "otp",
+    "pin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamkhan21/mui-useful-components.git"
+  },
+  "author": "Ivan Khanevich <help@iamkhan.tech>",
+  "license": "MIT",
+  "homepage": "https://github.com/iamkhan21/mui-useful-components"
 }
