@@ -39,6 +39,11 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen-typescript',
     check: true,
   },
+  rsbuildFinal: (config) => {
+    config.output ??= {};
+    config.output.assetPrefix = '/mui-useful-components/';
+    return config;
+  },
 };
 
 export default config;
