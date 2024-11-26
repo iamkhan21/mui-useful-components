@@ -12,10 +12,13 @@
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
+    "preview": "storybook preview",
     "check": "biome check --write",
     "dev": "rslib build --watch",
     "format": "biome format --write",
@@ -79,5 +82,5 @@
   },
   "author": "Ivan Khanevich <help@iamkhan.tech>",
   "license": "MIT",
-  "homepage": "https://github.com/iamkhan21/mui-useful-components"
+  "homepage": "https://iamkhan21.github.io/mui-useful-components"
 }
