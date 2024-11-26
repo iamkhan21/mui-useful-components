@@ -3,6 +3,7 @@
   "description": "A library of React components built on Material-UI for enhanced UI/UX",
   "version": "1.1.0",
   "type": "module",
+  "packageManager": "pnpm@9.14.2",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
