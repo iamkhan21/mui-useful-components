@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.1.0...v1.1.1)
+
+### 🤖 CI
+
+- Add deployment to GithubPages ([f5e4c5d](https://github.com/iamkhan21/mui-useful-components/commit/f5e4c5d))
+- Fix package manager part ([9ae9236](https://github.com/iamkhan21/mui-useful-components/commit/9ae9236))
+- Fix action ([1cbc787](https://github.com/iamkhan21/mui-useful-components/commit/1cbc787))
+- Improve actions and add homepage ([d255291](https://github.com/iamkhan21/mui-useful-components/commit/d255291))
+- Improve actions and add homepage ([51ac9ca](https://github.com/iamkhan21/mui-useful-components/commit/51ac9ca))
+- Improve actions ([ef0e382](https://github.com/iamkhan21/mui-useful-components/commit/ef0e382))
+- Improve actions ([48c8e7d](https://github.com/iamkhan21/mui-useful-components/commit/48c8e7d))
+- Improve actions ([11b7e7c](https://github.com/iamkhan21/mui-useful-components/commit/11b7e7c))
+- Improve actions ([42f341a](https://github.com/iamkhan21/mui-useful-components/commit/42f341a))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.1.0
 
 [compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.0.2...v1.1.0)
