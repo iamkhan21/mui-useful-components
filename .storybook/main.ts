@@ -19,14 +19,7 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    {
-      name: getAbsolutePath('storybook-addon-rslib'),
-      options: {
-        rslib: {
-          include: ['**/stories/**'],
-        },
-      },
-    },
+    'storybook-addon-rslib',
   ],
   framework: {
     name: getAbsolutePath('storybook-react-rsbuild'),
@@ -43,6 +36,9 @@ const config: StorybookConfig = {
     config.output ??= {};
     config.output.assetPrefix = '/mui-useful-components/';
     return config;
+  },
+  core: {
+    disableTelemetry: true,
   },
 };
 

@@ -1,19 +1,6 @@
-import InputLabel from '@mui/material/InputLabel';
 import Stack from '@mui/material/Stack';
-import TextField, { type TextFieldProps } from '@mui/material/TextField';
 import React from 'react';
-
-type PinInputContext = {
-  id: string;
-  registerInput: (ref: HTMLInputElement, index: number) => void;
-  onlyDigits: boolean;
-};
-
-const PinInputContext = React.createContext<PinInputContext>({
-  id: '',
-  registerInput: () => {},
-  onlyDigits: false,
-});
+import PinInputContext from './pin-input.context';
 
 const sanitizeInput = (
   value: string | undefined | null,
@@ -24,13 +11,13 @@ const sanitizeInput = (
   return value.replace(regex, '');
 };
 
-const Root: React.FC<
+const PinInputRoot: React.FC<
   React.PropsWithChildren<{
     onValueComplete: (pin: string) => void;
     onlyDigits?: boolean;
   }>
 > = ({ children, onlyDigits = false, onValueComplete }) => {
-  const inputId = React.useRef(self.crypto.randomUUID().slice(-10));
+  const inputId = React.useRef(crypto.randomUUID().slice(-10));
 
   const inputRefs = React.useRef<HTMLInputElement[]>([]);
 
@@ -133,63 +120,6 @@ const Root: React.FC<
   );
 };
 
-const Label: React.FC<React.PropsWithChildren> = ({ children }) => {
-  const ctx = React.useContext(PinInputContext);
-  return <InputLabel htmlFor={`${ctx.id}::0`}>{children}</InputLabel>;
-};
+PinInputRoot.displayName = 'PinInput.Root';
 
-const Control: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <Stack gap={1} direction="row" alignItems="center">
-    {children}
-  </Stack>
-);
-
-const Input: React.FC<
-  Omit<
-    TextFieldProps,
-    | 'value'
-    | 'onChange'
-    | 'onBlur'
-    | 'onFocus'
-    | 'slotProps'
-    | 'inputRef'
-    | 'variant'
-    | 'id'
-  > & {
-    index: number;
-  }
-> = ({ index, ...props }) => {
-  const ctx = React.useContext(PinInputContext);
-
-  return (
-    <TextField
-      {...props}
-      variant="outlined"
-      id={`${ctx.id}::${index}`}
-      inputRef={(ref) => ctx.registerInput(ref, index)}
-      slotProps={{
-        htmlInput: {
-          inputMode: ctx.onlyDigits ? 'numeric' : 'text',
-          style: {
-            textAlign: 'center',
-            aspectRatio: '1',
-          },
-        },
-      }}
-    />
-  );
-};
-
-Root.displayName = 'PinInput.Root';
-Label.displayName = 'PinInput.Label';
-Control.displayName = 'PinInput.Control';
-Input.displayName = 'PinInput.Input';
-
-const PinInput = {
-  Root,
-  Label,
-  Control,
-  Input,
-};
-
-export default PinInput;
+export default PinInputRoot;
