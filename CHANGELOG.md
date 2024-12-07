@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.1.1...v1.1.2)
+
+### 🏡 Chore
+
+- Refactor folder schema chore: update deps ([87e17d8](https://github.com/iamkhan21/mui-useful-components/commit/87e17d8))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.1.1
 
 [compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.1.0...v1.1.1)
