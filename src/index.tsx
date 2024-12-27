@@ -1,1 +1,1 @@
-export { default as PinInput } from './pin-input';
+export { default as PinInput } from './pin-input/index';
