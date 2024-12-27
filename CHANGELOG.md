@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.1.3
+
+[compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.1.2...v1.1.3)
+
+### 🩹 Fixes
+
+- Fix for package.json ([a97d75f](https://github.com/iamkhan21/mui-useful-components/commit/a97d75f))
+- Fix for path issue chore: update deps ([e459e05](https://github.com/iamkhan21/mui-useful-components/commit/e459e05))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.1.2
 
 [compare changes](https://github.com/iamkhan21/mui-useful-components/compare/v1.1.1...v1.1.2)
